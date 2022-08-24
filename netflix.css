@@ -1,0 +1,442 @@
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Bd.woff2");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Blk.woff2");
+    font-weight: 800;
+}
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Lt.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Md.woff2");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Th.woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Netflix Sans ;
+    src: url("fonts/NetflixSans_W_Rg.woff2");
+    font-weight: 500;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    padding-bottom: 200px;
+}
+
+.home{
+    position: relative;
+}
+    
+.gradient{
+    background-color: rgba(0, 0, 0, 0.653);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: inset;
+    box-shadow: white;
+}
+
+.cover-home{
+    width: 100%;
+    height: 680px;
+    object-fit: cover;
+    position: relative;
+    text-align: center;
+    border-bottom: 8px solid #222;
+}
+
+.home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-top: 30px;
+}
+.content-top{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 18px;
+    line-height: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.content-middle{
+    font-size: 26px;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.content-bottom{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    white-space: nowrap;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.content-box{
+    display: flex;
+}
+
+.content-box input{
+    padding: 14px 5px;
+    font-size: 16px;
+    margin: 0;
+}
+.email-box{
+    flex: 2;
+    
+}
+.content-box .get-started-button{
+    background-color: #f40612;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0;
+    cursor: pointer;
+    flex: 1;
+}
+@media (max-width:950px){
+    .content-box{
+     flex-direction: column;
+     row-gap: 20px;
+     align-items: center;
+     justify-content: center;
+    }
+    .get-started-button{
+     font-size: 12px;
+     align-items: center;
+     padding: 10px 5px;
+    }
+    .email-box{
+     width: 400px;
+    }
+ }
+.enjoy {
+    width: 100%;
+    height: 465px;
+    border-bottom: 8px solid #222;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    z-index: 10;
+    color: white;
+}
+
+.enjoy-content .content-middle,
+.enjoy-content .content-top{
+    text-align: left;
+    margin: 0;
+    margin-left: 90px;
+    
+}
+.enjoy-video{
+    
+}
+.enjoy-video img{
+    position: relative;
+    height: 400px;
+    margin-top: -20px;
+    z-index: 20;
+    
+}
+.enjoy-video .video{
+    position: absolute;
+    
+    height: 218px;
+    padding-top: 63px;
+    padding-left: 70px;
+    z-index: 11;
+}
+@media (max-width:950px){
+    .enjoy{
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+        align-items: center;
+        height: 700px;
+    }
+    .enjoy-content{
+        margin-bottom: -100px;
+        z-index: 30;
+    }
+    .enjoy-content .content-middle{
+        text-align: center;
+        margin: 0px 100px;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+    .enjoy-content .content-top{
+        text-align: center;
+        margin: 0px 100px;
+        font-size: 43px;
+
+    }
+    .enjoy-video{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
+
+.download{
+    width: 84%;
+    height: 340px;
+    padding: 5% 8% 5% 8% ;
+    border-bottom: 8px solid #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    z-index: 10;
+    color: white;
+}
+.download-content{
+   flex: 1; 
+   order: 2;
+}
+.download-content .content-top,
+.download-content .content-middle{
+    text-align: left;
+    margin: 0;
+}
+
+.download-anim-container{
+   flex: 1;
+   order: 1;
+}
+.download-anim{
+    position: relative;
+    margin-left: -100px;
+}
+
+.download-anim-container img{
+    height: 378px;
+    margin-left: 8px;
+    
+}
+.anim-container{
+    position: absolute;
+    background-color: black;
+    border:2px solid rgba(255,255,255,.25);
+    border-radius: 13px;
+    z-index: 50;
+    top: 253px;
+    left: 95px;
+    width: 325px;
+    height: 93px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 16px;
+}
+.left-part{
+    flex: 1;
+}
+.middle-part{
+    flex: 3;
+}
+.right-part{
+    flex: 1;
+}
+.top-part{
+    font-size: 16px;
+    font-weight: 500;
+}
+.bottom-part{
+    font-size: 14px;
+    color: #0071eb;
+}
+.left-part img,
+.right-part img{
+    height: 70px;
+    margin-left: 13px;
+}
+
+@media (max-width:950px){
+    .download{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+    }
+    .download-content{
+        order: 1;
+        flex: 1 ;
+        z-index: 100;
+    }
+    .download-anim-container{
+        order: 2;
+        flex: 1 ;
+    }
+    .download-content .content-middle{
+        text-align: center;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+    .download-content .content-top{
+        text-align: center;
+        font-size: 38px;
+    }
+    .download-anim{
+        margin-top: -140px;
+        margin-left: 0;
+    }
+
+}
+.watch{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.watch-content{
+    flex: 1;
+
+}
+.watch-content .content-top,
+.watch-content .content-middle{
+    text-align: left;
+    margin: 0;
+}
+.watch-video{
+    flex: 1;
+    
+}
+.watch-anim{
+    
+}
+
+.watch-anim img{
+    position: relative;
+    z-index: 20;
+    height: 400px;
+}
+
+.watch-anim .video{
+    position: absolute;
+    height: 184px;
+    z-index: 11;
+    padding-top: 51px;
+    padding-left: 100px;
+}
+
+@media (max-width:950px){
+    .watch{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+        row-gap: 20px;
+    }
+    .watch-content{
+        flex: 1;
+        z-index: 30;
+    }
+    .watch-content .content-middle{
+        text-align: center;
+        margin: 0px 60px;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+    .watch-content .content-top{
+        text-align: center;
+        margin: 0px 100px;
+        font-size: 43px;
+
+    }
+    .watch-video{
+        flex: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
+
+.child{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: 0 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.child-content{
+    flex: 1;
+    order: 2;
+}
+.child-content .content-top,
+.child-content .content-middle{
+    text-align: left;
+    margin: 0;
+}
+.image-child{
+    flex: 1;
+    order: 1;
+}
+.image-child img{
+    height: 400px;
+}
+
+@media (max-width:950px){
+    .child{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+    }
+    .child-content{
+        order: 1;
+        flex: 1 ;
+        z-index: 100;
+    }
+    .image-child{
+        order: 2;
+        flex: 1 ;
+    }
+    .child-content .content-middle{
+        text-align: center;
+        padding-bottom: 0;
+        font-size: 20px;
+    }
+    .child-content .content-top{
+        text-align: center;
+        font-size: 38px;
+    }
+
+}
